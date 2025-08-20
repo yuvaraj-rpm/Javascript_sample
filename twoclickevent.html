@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change() {
+            debugger;
+             var ch = document.getElementById("changes")
+
+            
+                ch.innerText = event.target.innerText;
+           
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="changes"></h1>
+    <button id="one" onclick="change(Event)">John</button>
+    <button id="two" onclick="change(Event)">Praveen</button>
+    <button id="thee" onclick="change(Event)">Kumar</button>
+
+</body>
+
+</html>

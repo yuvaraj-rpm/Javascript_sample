@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        #txt {
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            transition: 2s;
+        }
+        .withs{
+            width: 900%;
+        }
+    </style>
+    <script>
+        function change() {
+            var t1=document.getElementById("txt")
+            t1.style.backgroundColor="Green"
+            t1.setAttribute("class","withs")
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to school</h1>
+    </br>
+    <input type="text" name="" id="txt">
+    <br>
+    <button onclick="change()">Click Here</button>
+</body>
+
+</html>

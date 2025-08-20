@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //debugger
+        function change() {
+           // debugger
+            var txt = document.getElementById("txt1")
+
+            var b = Math.floor(Math.random() * 10) + 1
+            var count = 0
+            if (txt.value == b) {
+                count++
+            }
+            else {
+                count--
+                if (count == -1 ) {
+                    count = 0
+                }
+            }
+            console.log(count)
+            alert("Your wining point is " +count +" Randam number is"+ b);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Guess the randam number for 1 to 10</h1>
+    <input type="" name="" id="txt1">
+    <button onclick="change()">Click</button>
+</body>
+
+</html>

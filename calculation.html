@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+
+        function change() {
+            debugger;
+            var a = document.getElementById("Txtone");
+            var b = document.getElementById("Txttwo");
+
+            console.log("Calculated a & B : " + (a.value + b.value))
+            var out = document.getElementById("Calculation")
+            var t1 = Number(a.value)
+            var t2 = Number(b.value)
+            var result = t1 + t2
+            out.innerText = result;
+            console.log(out);
+        }
+    </Script>
+</head>
+
+<body>
+    <input type="A" name="" id="Txtone">
+    <input type="B" name="" id="Txttwo">
+    <button onclick="change()"> click </button>
+    <p id="Calculation">Calculation</p>
+
+</body>
+
+</html>
