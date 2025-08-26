@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function preed() {
+        debugger;
+
+        var fem = document.getElementById("Female").checked;
+        if (fem == true) {
+          var Mal = document.getElementById("Male").checked;
+          Mal.checked = false;
+        } else {
+          female.checked = true;
+        }
+      }
+      function pree() {
+        debugger;
+        var Mal = document.getElementById("Male").checked;
+        console.log(Mal);
+        if (Mal == true) {
+          var fem = document.getElementById("Female").checked;
+          fem.checked = false;
+        } else {
+          Mal.checked = true;
+        }
+      }
+
+      function add() {
+        var name = document.getElementById("Name").value;
+        var age = document.getElementById("Age").value;
+        var Male = document.getElement("Male").checked;
+        var female = document.getElementById("Femle").checked;
+        var course = document.getElementById("Course").value;
+        var email = document.getElementById("Email").value;
+        if ((name = "" || age == "" || course == "" || email == "")) {
+          alert("Please fill all the fields");
+        }
+      }
+    </script>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <label for="">Name</label>
+    <input type="text" name="" id="Name" />
+    <br />
+    <label for="">Age</label>
+    <input type="text" name="" id="Age" />
+    <br />
+    <label for="">Gender</label>
+    <input type="checkbox" name="Male" id="Male" onclick="pree()" />Male
+    <input type="checkbox" name="Female" id="Female" onclick="preed()" />Female
+    <br />
+    <label for="">Course</label>
+    <select name="" id="Course">
+      <option value="BCA">BCA</option>
+      <option value="BBA">BBA</option>
+      <option value="BSc">BSc</option>
+      <option value="MCA">MCA</option>
+      <option value="MBA">MBA</option>
+    </select>
+    <br />
+    <label for="">Email</label>
+    <input type="text" name="" id="Email" />
+    <br />
+    <button onclick="add()">Submit</button>
+    <li id="clicked"></li>
+  </body>
+</html>

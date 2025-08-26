@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function adds() {
+            var txted = document.getElementById("txt1")
+            var li = document.getElementById("listitem")
+          
+            var lis = document.createElement("li")
+            lis.innerHTML = txted.value+
+                '<button onclick="del()">Delete</button>'
+            li.append(lis)
+            txted.value =null
+        }
+        function del() {
+            var li = document.getElementById("listitem")
+            li.removeChild(event.target.parentNode)
+        }
+    </script>
 </head>
+
 <body>
-    
+    <input type="text" id="txt1">
+    <button onclick="adds()">Click Here</button>
+    <ul id="listitem">
+        <li>hello
+            <button onclick="del()">Delete</button>
+        </li>
+    </ul>
 </body>
+
 </html>
