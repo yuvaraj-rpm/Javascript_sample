@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+     
+      .Form{
+        background-color: bisque;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function change() {
+        debugger;
+        var id = document.getElementById("countries").value;
+        if (id != "" && id != "any" && id != '') {            
+            alert('Thanks for selecting counties'+id);
+        } else {
+          alert("Kindly select the country");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="Form">
+        <h2>Country Form</h2>
+      <label text="Select the countries">Select the countries</label>
+      <select id="countries">
+        <option value="">select</option>
+        <option id="India">India</option>
+        <option id="USA">USA</option>
+        <option id="UK">UK</option>
+        <option id="Canada">Canada</option>
+        <option id="Australia">Australia</option>
+      </select>
+      <button class="btn" onclick="change()">Click here</button>
+    </div>
+  </body>
+</html>
